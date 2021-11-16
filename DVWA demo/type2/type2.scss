@@ -1,0 +1,79 @@
+:root{
+    --primary-color:#007AF3;
+}
+
+body{
+    background:rgba($color: black, $alpha: 0.75) url("../images/dvwa.jpg");
+    margin: 0;
+    background-size: cover;
+    background-blend-mode: darken;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+section{
+    padding: 2em 2em;
+}
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 2.5em;
+}
+ul{
+    padding-left: 0px;
+    margin: 0em;
+    display: flex;
+    margin-top: 2.5em;
+    
+}
+
+li{
+    margin: 0em 2em;
+    //color: #f2f2f2;
+    font-weight: bold;
+    font-size: 1.25em;
+    display: inline;
+    padding: 1em 1em;
+   // background: #006bd6;
+    text-align: center;
+    width: 80%;
+    border-radius: 1em;
+
+    h3.easy{
+        color: rgb(76, 184, 76);
+    }
+    h3.medium{
+        color: orange;
+    }
+    h3.hard{
+        color: red;
+    }
+    .selectbox{
+       select{
+           width: 250px;
+           font-weight: bold;
+           padding: 0.5em;
+           border-radius: 0.25em;
+        }
+    }
+    input{
+        margin-top: 1.5em;
+        width: 150px;
+        padding: 0.5em 1.25em;
+        border-radius: 0.25em;
+        border: 0.2px solid gray;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    button{
+        margin: 25px;
+        padding: 1em 2.5em;
+        border-radius: 2em;
+        background-color: var(--primary-color);
+        font-weight: bold;
+        color: white;
+        border: none;
+    }
+}

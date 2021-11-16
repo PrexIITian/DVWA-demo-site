@@ -1,0 +1,72 @@
+:root {
+  --primary-color:#007AF3;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.75) url("images/dvwa.jpg");
+  margin: 0;
+  background-size: cover;
+  background-blend-mode: darken;
+  font-family: 'Poppins', sans-serif;
+  margin: 50px;
+}
+
+section {
+  padding: 2em 2em;
+}
+
+ul {
+  padding-left: 0px;
+  margin: 0em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.heading {
+  text-align: center;
+  font-size: x-large;
+  color: white;
+  margin-top: 7em;
+}
+
+.heading span {
+  color: #d62525;
+}
+
+.type {
+  color: white;
+}
+
+.type .container li {
+  margin: 0em 1.25em;
+  font-weight: bold;
+  font-size: 1.25em;
+  display: inline;
+  padding: 1em 1em;
+  text-align: center;
+  width: 80%;
+  border-radius: 1em;
+}
+
+.type .container li .btn {
+  margin-top: 2.25em;
+}
+
+.type .container li .btn a {
+  padding: 1em 2.5em;
+  border-radius: 1.75em;
+  background-color: var(--primary-color);
+  text-decoration: none;
+  font-size: 0.75em;
+  color: white;
+}
+
+cite {
+  position: fixed;
+  color: white;
+  margin-left: 65em;
+  margin-top: 8em;
+  font-weight: bold;
+}
+/*# sourceMappingURL=main.css.map */

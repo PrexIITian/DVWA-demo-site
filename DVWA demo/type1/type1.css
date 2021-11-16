@@ -1,0 +1,83 @@
+:root {
+  --primary-color:#007AF3;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.75) url("../images/dvwa.jpg");
+  margin: 0;
+  background-size: cover;
+  background-blend-mode: darken;
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-top: 2.5em;
+}
+
+ul {
+  padding-left: 0px;
+  margin: 0em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2.5em;
+}
+
+section {
+  padding: 2em 2em;
+}
+
+li {
+  margin: 0em 2em;
+  font-weight: bold;
+  font-size: 1.25em;
+  display: inline;
+  padding: 1em 1em;
+  text-align: center;
+  width: 80%;
+  border-radius: 1em;
+}
+
+li h3.easy {
+  color: #4cb84c;
+}
+
+li h3.medium {
+  color: orange;
+}
+
+li h3.hard {
+  color: red;
+}
+
+li .selectbox select {
+  width: 250px;
+  font-weight: bold;
+  padding: 0.5em;
+  border-radius: 0.25em;
+}
+
+li input {
+  margin-top: 1.5em;
+  width: 150px;
+  padding: 0.5em 1.25em;
+  border-radius: 0.25em;
+  border: 0.2px solid gray;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+li button {
+  margin: 25px;
+  padding: 1em 2.5em;
+  border-radius: 2em;
+  background-color: var(--primary-color);
+  font-weight: bold;
+  color: white;
+  border: none;
+}
+/*# sourceMappingURL=type1.css.map */

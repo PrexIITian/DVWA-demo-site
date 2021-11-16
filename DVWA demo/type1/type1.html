@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="type1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+
+    <script>
+   
+        function selecte()
+        {
+            var d=document.getElementById("selecte");
+            var text=d.options[d.selectedIndex].text;
+            document.getElementById("selectedtexte").value=text;
+        }
+        function selectm()
+        {
+            var d=document.getElementById("selectm");
+            var text=d.options[d.selectedIndex].text;
+            document.getElementById("selectedtextm").value=text;
+        }
+        function selecth()
+        {
+            var d=document.getElementById("selecth");
+            var text=d.options[d.selectedIndex].text;
+            document.getElementById("selectedtexth").value=text;
+        }
+        function copye(){
+            var text=document.getElementById("selectedtexte");
+            var btntxt=document.getElementById("btne");
+            text.select();
+            document.execCommand("copy");
+           
+        }
+        function copym(){
+            var text=document.getElementById("selectedtextm");
+            var btntxt=document.getElementById("btnm");
+            text.select();
+            document.execCommand("copy");
+        
+        }
+        function copyh(){
+            var text=document.getElementById("selectedtexth");
+            var btntxt=document.getElementById("btnh");
+            text.select();
+            document.execCommand("copy");
+            
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Command Injection</h1>
+    <div class="container">
+       
+        <ul>
+            <li> 
+                <h3 class="easy">Low</h3>
+                <div class="selectbox">
+                    <select id="selecte" onchange="selecte();">
+                        <option>--- Select Command ---</option>
+                        <option>127.0.0.1 && ls ../../</option>
+                        <option>127.0.0.1; hostname</option>
+                        <option>127.0.0.1 ; echo 'You are under attack'</option>
+                    </select><br>
+                    <input type="text" id="selectedtexte"/><br>
+                    <button id=btne onclick="copye()">Copy</button>
+                   
+                    
+                </div>
+            </li>
+            <li>
+                <h3 class="medium">Medium</h3>
+                <div class="selectbox">
+                    <select id="selectm" onchange="selectm();">
+                        <option>--- Select Command ---</option>
+                        <option>127.0.0.1 & cat ../../index.php</option>
+                        <option>127.0.0.1 & whoami</option>
+                    </select><br>
+
+                    <input type="text" id="selectedtextm"/><br>
+                    <button id=btnm onclick="copym()">Copy</button>
+                  
+                </div>
+            </li>
+            <li>
+                <h3 class="hard">High</h3>
+                <div class="selectbox">
+                    <select id="selecth" onchange="selecth();">
+                        <option>--- Select Command ---</option>
+                        <option>127.0.0.1 |ls ../../</option>
+                    </select><br>
+                    
+                    <input type="text" id="selectedtexth"/><br>
+                    <button id=btnh onclick="copyh()">Copy</button>
+                    
+                    
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    
+
+</body>
+
+
+</html>
